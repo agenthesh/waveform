@@ -1,6 +1,6 @@
 ## WaveForm
 
-<img src = "https://github.com/agenthesh/waveform/blob/master/assets/images/waveform-logo.jpg" >
+<img src = "https://github.com/agenthesh/waveform/blob/main/assets/waveform-logo.jpg" >
 
 WaveForm is a Flutter package that helps you build animated waveforms in your Flutter app. With the popularity of voice-based chat UIs rising, WaveForm provides an easy and efficient way to visualize audio waveforms. Inspired by WaveSurfer.js, WaveForm offers a range of features to integrate beautiful and functional waveforms into your Flutter applications.
 
