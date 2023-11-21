@@ -17,6 +17,27 @@ class _AnimatedWaveListState extends State<AnimatedWaveList> {
 
   late ListModel<Amplitude> _list;
 
+  Widget _buildItem(
+      BuildContext context, int index, Animation<double> animation) {
+    return WaveFormBar(
+      animation: animation,
+      amplitude: _list[index],
+    );
+  }
+
+  Widget _buildRemovedItem(
+      Amplitude amplitude, BuildContext context, Animation<double> animation) {
+    return WaveFormBar(
+      animation: animation,
+      amplitude: amplitude,
+    );
+  }
+
+  // Insert the "next item" into the list model.
+  void _insert(Amplitude amplitude) {
+    _list.insert(0, amplitude);
+  }
+
   @override
   void initState() {
     super.initState();
