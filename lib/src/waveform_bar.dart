@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waveform/waveform_interface.dart';
+import 'package:waveform/waveform.dart';
 
 /// A widget that represents a single bar in a waveform visualisation.
 ///
