@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:waveform/src/amplitude.dart';
+import 'amplitude.dart';
 
 /// Creates a stream of random amplitude values.
 ///

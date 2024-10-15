@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:waveform/src/amplitude.dart';
-import 'package:waveform/src/amplitude_helpers.dart';
-import 'package:waveform/src/animated_wave_list.dart';
+
+import 'amplitude.dart';
+import 'amplitude_helpers.dart';
+import 'animated_wave_list.dart';
 
 class Waveform extends StatelessWidget {
   const Waveform({super.key, this.amplitudeStream});
