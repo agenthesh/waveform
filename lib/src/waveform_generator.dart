@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:waveform/src/list_helpers.dart';
-import 'package:waveform/src/waveform_bar.dart';
-import 'package:waveform/waveform.dart';
+
+import 'amplitude.dart';
+import 'list_helpers.dart';
+import 'waveform_bar.dart';
 
 class WaveFormGenerator extends StatelessWidget {
   const WaveFormGenerator({

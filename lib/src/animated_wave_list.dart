@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:waveform/src/listmodel.dart';
-import 'package:waveform/src/waveform_bar.dart';
-import 'package:waveform/waveform.dart';
+
+import 'amplitude.dart';
+import 'listmodel.dart';
+import 'waveform_bar.dart';
 
 /// A widget that displays an animated list of waveform bars based on a stream of amplitude values.
 class AnimatedWaveList extends StatefulWidget {

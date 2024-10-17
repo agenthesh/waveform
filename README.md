@@ -36,11 +36,13 @@ Below is an example of how to use WaveForm to display an animated waveform:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:waveform/waveform.dart';
+import 'package:waveform_flutter/waveform_flutter.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,7 +55,10 @@ class MyApp extends StatelessWidget {
 }
 
 class WaveFormExample extends StatefulWidget {
+  const WaveFormExample({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _WaveFormExampleState createState() => _WaveFormExampleState();
 }
 
