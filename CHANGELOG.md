@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Enable a custom builder for `WaveFormBar` instances when using `AnimatedWaveList`
+
 ## 1.1.0
 
 - Enable a build with the package name (`waveform_flutter`)

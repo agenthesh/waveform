@@ -7,14 +7,12 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('WaveForm Example')),
-        body: WaveFormExample(),
-      ),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(title: Text('WaveForm Example')),
+          body: WaveFormExample(),
+        ),
+      );
 }
 
 class WaveFormExample extends StatefulWidget {
@@ -29,7 +27,12 @@ class _WaveFormExampleState extends State<WaveFormExample> {
   final Stream<Amplitude> _amplitudeStream = createRandomAmplitudeStream();
 
   @override
-  Widget build(BuildContext context) {
-    return AnimatedWaveList(stream: _amplitudeStream);
-  }
+  Widget build(BuildContext context) => AnimatedWaveList(
+        stream: _amplitudeStream,
+        barBuilder: (animation, amplitude) => WaveFormBar(
+          animation: animation,
+          amplitude: amplitude,
+          color: Colors.red, // override the default of cyan
+        ),
+      );
 }

@@ -1,6 +1,6 @@
 name: example
 description: "Example app for waveform_flutter"
-version: 1.1.0
+version: 1.2.0
 repository: https://github.com/agenthesh/waveform
 publish_to: none
 
